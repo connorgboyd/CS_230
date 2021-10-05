@@ -18,11 +18,14 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { MetaNinComponent } from './meta-nin/meta-nin.component';
 import { CardComponent } from './explore/components/card/card.component';
+import {HttpClientModule} from '@angular/common/http';
+import { UserInfoComponent } from './top-bar/user-info.component';
+
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, HelloComponent, TopBarComponent, FootBarComponent, AboutComponent, ExploreComponent, MetaMapComponent, MetaGrinderComponent, WallofFameComponent, SignupComponent, SigninComponent, MetaNinComponent, CardComponent],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, HelloComponent, TopBarComponent, FootBarComponent, AboutComponent, ExploreComponent, MetaMapComponent, MetaGrinderComponent, WallofFameComponent, SignupComponent, SigninComponent, MetaNinComponent, CardComponent, UserInfoComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

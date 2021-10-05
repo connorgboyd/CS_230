@@ -1,0 +1,20 @@
+<div *ngIf="myInfo == undefined; else userInfo">
+    Failed  fetching User Info
+</div>
+
+<ng-template #userInfo>
+    <div class ="container-fluid" style="color: white;">
+    <div class ="d-flex flex-row justify-content-between">
+    <div class = "flex-column">
+        User: {{myInfo?.FirstName}} {{myInfo?.LastName}}  
+    </div> 
+    <div class = "flex-column">
+        <a href="{{myInfo?.Github}}">Github:{{myInfo?.Github}}</a>
+    </div> 
+    <div class = "flex-column">
+        <a href="mailto:{{myInfo?.mix_id}}@mix.wvu.edu">Mix ID:{{myInfo?.mix_id}}</a>  
+    </div> 
+        </div>
+    </div>
+
+</ng-template>
