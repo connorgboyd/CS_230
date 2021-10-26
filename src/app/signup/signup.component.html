@@ -1,26 +1,26 @@
-<form action="action_page.php">
+<form #postForm = "ngForm" action="action_page.php" (ngSubmit) = "onSignUpUser(postForm.value)">
     <div class="container">
         <h6 style="color:white; font-weight: normal; margin-bottom: 0px;">Sign Up</h6>
 
         <div>
             <label for="email" style="color:white;  ">Email:</label>
-            <input type="text" style="color:white; width: 50px;" placeholder="Email*" name="email" required>
+            <input type="text" style= "width: 50px;" placeholder="Email*" name="email" ngModel name = "email" required>
         </div>
         <div>
             <label for="Name" style="color:white;">Name:</label>
-            <input type="text" style="color:white; width: 50px;" placeholder="Name*" name="name" required>
+            <input type="text" style="width: 50px;" placeholder="Name*" name="name" ngModel name = "name" required>
         </div>
         <div>
             <label for="psw" style="color:white;">Password:</label>
-            <input type="password" style="color:white; width: 50px;" placeholder="Password*" name="psw" required>
+            <input type="password" style="width: 50px;" placeholder="Password*"ngModel name = "password" required>
         </div>
         <div>
             <label for="psw-repeat" style="color:white;">Confirm Password:</label>
-            <input type="password" style="color:white; width: 50px;" placeholder="Confirm Password*" name="psw-repeat"
-                required>
+            <input type="password" style="width: 50px;" placeholder="Confirm Password*" 
+            ngModel name = "confirmPassword" required>
         </div>
         <div>
-        <button type="Signup" class="Signup">Signup</button>
+        <button type="submit" class="Signup">Signup</button>
     </div>
 
 

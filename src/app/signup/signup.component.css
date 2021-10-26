@@ -14,6 +14,7 @@ div{
 }
 input{
     width: 190px !important;
+    color: black;
 }
 label{
     margin-bottom: 5px;
