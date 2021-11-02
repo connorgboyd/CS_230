@@ -6,6 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  [x: string]: any;
   public footerTitle: string = "MetaNin";
   public footerSymbol: string = "©";
   public footerDate: string = "2021";

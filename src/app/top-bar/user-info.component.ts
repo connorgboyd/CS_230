@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Component, Injectable, OnInit } from "@angular/core";
+import { DatabaseService } from "../database.service";
 import { FirebaseService } from "../services/firebase.service";
 import { CompleteResponse, UserInfo } from "./user-info.model";
 
@@ -11,7 +12,7 @@ import { CompleteResponse, UserInfo } from "./user-info.model";
 })
 export class UserInfoComponent implements OnInit{
     myInfo: UserInfo | undefined;
-    constructor(private firebase: FirebaseService){
+    constructor(private firebase: FirebaseService, private dbService:DatabaseService){
 
     }
     ngOnInit(): void {
