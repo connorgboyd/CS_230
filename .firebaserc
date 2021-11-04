@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "metanin-7ac63": {
+      "hosting": {
+        "metanin": [
+          "metanin-7ac63"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "metanin-7ac63"
+  }
+}

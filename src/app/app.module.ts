@@ -20,11 +20,12 @@ import { MetaNinComponent } from './meta-nin/meta-nin.component';
 import { CardComponent } from './explore/components/card/card.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './top-bar/user-info.component';
-
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebaseConfig, 'metanin-app')],
   declarations: [AppComponent, HelloComponent, TopBarComponent, FootBarComponent, AboutComponent, ExploreComponent, MetaMapComponent, MetaGrinderComponent, WallofFameComponent, SignupComponent, SigninComponent, MetaNinComponent, CardComponent, UserInfoComponent],
   bootstrap:    [ AppComponent ]
 })

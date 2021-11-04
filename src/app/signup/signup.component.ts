@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../database.service';
 import { FirebaseService } from '../services/firebase.service';
 import { SignUpForm } from './signup.model';
 
@@ -9,7 +10,8 @@ import { SignUpForm } from './signup.model';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(private firebaseservice: FirebaseService) { 
+  constructor(private firebaseservice: FirebaseService, private databaseService: DatabaseService) { 
+    this.databaseService.showData();
     
   }
 
