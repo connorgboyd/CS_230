@@ -1,0 +1,30 @@
+nav{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 270px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:rgb(46, 182, 192);
+    text-decoration: none;
+}
+nav li{
+    list-style-type: none;
+    
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 900px;
+}
+.black{
+    color:black;
+}
+a{
+    padding: 8px 8px !important;
+}

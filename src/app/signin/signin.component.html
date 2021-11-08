@@ -1,0 +1,22 @@
+<form #postForm = "ngForm"  (ngSubmit) = "onSubmit(postForm)">
+    <div class="container">
+        <h6 style="color:white; font-weight: normal; margin-bottom: 0px;">Sign In</h6>
+
+        <div>
+            <label for="email" style="color:white;  ">Email:</label>
+            <input type="text" style="color:white; width: 50px;" placeholder="Email*" ngModel name = "email" required email>
+        </div>
+        
+        <div>
+            <label for="psw" style="color:white;">Password:</label>
+            <input type="password" style="color:white; width: 50px;" placeholder="Password*" ngModel name = "password" required password minlength = "8">
+        </div>
+        
+        <div>
+         <button type="submit" class="Signin" [disabled] = "!postForm.valid">Login</button>
+    </div>
+
+
+    </div>
+    
+</form>
